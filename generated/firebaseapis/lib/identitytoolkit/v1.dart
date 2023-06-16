@@ -7078,7 +7078,7 @@ class GoogleCloudIdentitytoolkitV1UserInfo {
         if (passwordUpdatedAt != null) 'passwordUpdatedAt': passwordUpdatedAt!,
         if (phoneNumber != null) 'phoneNumber': phoneNumber!,
         if (photoUrl != null) 'photoUrl': photoUrl!,
-        if (providerUserInfo != null) 'providerUserInfo': providerUserInfo!,
+        if (providerUserInfo != null) 'providerUserInfo': providerUserInfo!.map((provider) => provider.toJson()).toList(),
         if (rawPassword != null) 'rawPassword': rawPassword!,
         if (salt != null) 'salt': salt!,
         if (screenName != null) 'screenName': screenName!,
